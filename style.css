@@ -467,10 +467,14 @@ section.visible{
         flex-direction: column;
         text-align: center;
         padding-top: 100px;
-        padding-bottom: 60px;
+        padding-bottom: 120px;
         gap: 50px;
         min-height: unset;
         align-items: center;
+    }
+
+    .scroll-indicator{
+        bottom: 20px;
     }
 
     .hero-image{
