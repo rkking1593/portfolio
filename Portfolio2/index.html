@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarthak Upadhyay — Frontend Developer</title>
+<meta name="description" content="Sarthak Upadhyay — Frontend developer building fast, clean web experiences. Co-founder of Codenosis.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="#" class="logo">Sarthak Upadhyay</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">· Full-Stack Developer · Co-founder, Codenosis ·</span>
+        <h1 class="hero-title">I build <span class="italic-accent">fast, clean</span> web experiences — and audit the ones that aren't.</h1>
+        <p class="hero-sub">BCA student, self-taught frontend developer, and co-founder of Codenosis. I write real code, ship real projects, and dig into why a site actually feels slow instead of guessing.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <img src="profile.webp" alt="Sarthak Upadhyay" class="hero-photo">
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">· About ·</span>
+        <h2 class="section-title">A little about how I work.</h2>
+      </div>
+      <div class="about-text">
+        <p>I'm a full-stack developer from Uttar Pradesh, India, currently pursuing my BCA at Amity University Online, and co-founder of Codenosis, a web development and tech education blog. I write, correct, and deploy code myself — I'd rather understand why something works than copy-paste a fix. LuxeLane, a fully functional e-commerce storefront with cart, wishlist, and search, was built from scratch in 4 days.</p>
+        <p>Alongside frontend, I build real backend systems — Node, Express, MySQL, JWT auth — and I've shipped a deployed CMS that runs my own blog's publishing workflow. I care about code that's honest: no invented stats, no fabricated content, no over-engineering a problem that needed a simple solution.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">· Skills ·</span>
+        <h2 class="section-title">What I actually use.</h2>
+        <p class="section-desc">Core frontend stack, plus what I'm currently expanding into.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML5</div>
+        <div class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS3</div>
+        <div class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+        <div class="skill-tag"><i class="devicon-react-original colored"></i> React</div>
+        <div class="skill-tag"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</div>
+        <div class="skill-tag"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</div>
+        <div class="skill-tag"><i class="devicon-nodejs-plain colored"></i> Node.js & Express</div>
+        <div class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+        <div class="skill-tag"><i class="devicon-git-plain colored"></i> Git & GitHub</div>
+        <div class="skill-tag"><i class="devicon-google-plain colored"></i> SEO Auditing</div>
+      </div>
+
+      <p class="skills-basics-label">Also picked up through BCA coursework:</p>
+      <div class="skills-grid skills-grid-basics">
+        <div class="skill-tag skill-tag-basic"><i class="devicon-python-plain colored"></i> Python (basics)</div>
+        <div class="skill-tag skill-tag-basic"><i class="devicon-c-plain colored"></i> C (basics)</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">· Selected Work ·</span>
+        <h2 class="section-title">Projects worth a closer look.</h2>
+        <p class="section-desc">A mix of client-style builds, personal projects, and one evaluation case study.</p>
+      </div>
+
+      <div class="projects-list">
+
+        <div class="project-row">
+          <div class="project-card">
+            <span class="project-tag">Full-Stack · Node + Express + MySQL</span>
+            <h3>Codenosis CMS</h3>
+            <p>A full-stack content management system I built to replace the manual process of hand-editing my own blog's HTML files. Real MySQL database with proper foreign keys, JWT authentication, and an API that auto-generates the exact article card markup and sitemap entry on publish — the actual repetitive work this project exists to remove.</p>
+            <img src="cms-screenshot.png" alt="Codenosis CMS dashboard showing auto-generated articles.html and sitemap.xml snippets with copy buttons" class="project-screenshot">
+            <div class="project-stack">
+              <span class="stack-chip">Node.js</span>
+              <span class="stack-chip">Express</span>
+              <span class="stack-chip">MySQL</span>
+              <span class="stack-chip">JWT Auth</span>
+            </div>
+            <a href="https://codenosis-cms.up.railway.app" class="project-link" target="_blank" rel="noopener">codenosis-cms.up.railway.app →</a>
+          </div>
+          <p class="margin-note">Built for a real problem I actually had, not a tutorial follow-along.</p>
+        </div>
+
+        <div class="project-row">
+          <div class="project-card">
+            <span class="project-tag">Blog / Company Site</span>
+            <h3>Codenosis</h3>
+            <p>A web development and tech education blog I co-founded. I handle frontend, SEO, and Google Search Console — including fixing recurring structural errors across dozens of articles and resolving indexing issues.</p>
+            <div class="project-stack">
+              <span class="stack-chip">HTML</span>
+              <span class="stack-chip">CSS</span>
+              <span class="stack-chip">JS</span>
+              <span class="stack-chip">SEO</span>
+            </div>
+            <a href="https://codenosis.in" class="project-link" target="_blank" rel="noopener">codenosis.in →</a>
+          </div>
+          <p class="margin-note">Real, live, and still maintained — not a one-off demo.</p>
+        </div>
+
+        <div class="project-row">
+          <div class="project-card">
+            <span class="project-tag">E-commerce</span>
+            <h3>LuxeLane</h3>
+            <p>A luxury e-commerce portfolio project overhauled for mobile responsiveness and performance. Full JS feature set: cart, wishlist, product search, coupon modal, toast notifications, and scroll reveal — with Lighthouse gains from WebP compression.</p>
+            <div class="project-stack">
+              <span class="stack-chip">HTML</span>
+              <span class="stack-chip">CSS</span>
+              <span class="stack-chip">JavaScript</span>
+            </div>
+            <a href="https://luxelane1593.netlify.app" class="project-link" target="_blank" rel="noopener">luxelane1593.netlify.app →</a>
+          </div>
+          <p class="margin-note">The performance pass mattered more than the redesign.</p>
+        </div>
+
+        <div class="project-row">
+          <div class="project-card">
+            <span class="project-tag">Travel Platform</span>
+            <h3>VoyageVista</h3>
+            <p>Built fully from scratch — hero, destinations, packages, testimonials, and a working newsletter/contact section. JS features include a login/signup flow with localStorage auth, wishlist, recently viewed, and smooth scroll reveal.</p>
+            <div class="project-stack">
+              <span class="stack-chip">HTML</span>
+              <span class="stack-chip">CSS</span>
+              <span class="stack-chip">JavaScript</span>
+            </div>
+            <a href="https://voyagevista17.netlify.app" class="project-link" target="_blank" rel="noopener">voyagevista17.netlify.app →</a>
+          </div>
+          <p class="margin-note">No template — every section built from a blank file.</p>
+        </div>
+
+        <div class="project-row">
+          <div class="project-card">
+            <span class="project-tag">Case Study / Evaluation Project</span>
+            <h3>Funngro Website Revamp</h3>
+            <p>A 2-page revamp built for a company evaluation task — plus a full SEO audit of their live site using real PageSpeed data. Found and documented a real-world gap between lab performance scores and actual user experience, along with a broken internal link with no redirect.</p>
+            <div class="project-stack">
+              <span class="stack-chip">HTML</span>
+              <span class="stack-chip">CSS</span>
+              <span class="stack-chip">JS</span>
+              <span class="stack-chip">SEO Audit</span>
+            </div>
+            <a href="https://funngro-revamp-1.netlify.app" class="project-link" target="_blank" rel="noopener">funngro-revamp-1.netlify.app →</a>
+          </div>
+          <p class="margin-note">Evaluation task, not client work — the audit is the real story here.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <span class="eyebrow">· Get in touch ·</span>
+        <h2>Have a project in mind?</h2>
+        <p>Open to freelance work and new opportunities — feel free to reach out.</p>
+        <div class="contact-links">
+          <a href="https://github.com/rkking1593" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/sarthak-upadhyay-s09" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:its.sarthak1709@gmail.com" class="btn btn-primary">Email Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© 2026 Sarthak Upadhyay. Built from scratch, no template.</div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+</body>
+</html>
