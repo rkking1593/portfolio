@@ -71,8 +71,22 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
         hamburger.classList.remove('open');
+        
       });
     });
+
+    // Close menu when tapping anywhere outside
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('open') && 
+          !navLinks.contains(e.target) && 
+          !hamburger.contains(e.target)) {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+
   }
 
   // Scroll-spy — highlights the nav link matching the section currently in view
