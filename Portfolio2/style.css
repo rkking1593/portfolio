@@ -513,6 +513,7 @@ h1, h2, h3 {
   }
   .hero-photo-wrap {
     order: -1;
+    margin-bottom: 0.5rem;
   }
   .hero-photo-frame {
     max-width: 200px;
@@ -558,7 +559,7 @@ h1, h2, h3 {
   .header-inner {
     position: relative;
   }
-  .hero { padding: 4rem 0 3rem; }
+  .hero { padding: 6.5rem 0 3.5rem; }
   .section { padding: 3.25rem 0; }
   .back-to-top {
     bottom: 1.25rem;
